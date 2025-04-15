@@ -71,6 +71,23 @@ function abcd3(val){
 
 abcd3(function(){
     console.log("hello world");
-    
+    // return "hello world"
 })
+
+
+
+// frist class function => js me frist class funtion hi hota hai already hi frist class hota hai 
+
+function abcd4(val){
+
+}
+
+
+abcd4(function(){
+
+})
+
+
+// pure functions => 
+var a = 12 ;  // global scope 
 
