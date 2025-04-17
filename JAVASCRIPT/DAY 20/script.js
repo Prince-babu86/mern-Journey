@@ -44,4 +44,4 @@ var biodata = {
 }
 
 
-var obj2 = new Object();
+var obj2 = new Object();  // another method of create an object in javascript ;
