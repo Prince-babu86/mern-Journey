@@ -54,7 +54,7 @@ obj.name = "babu prince"  // but this can not we change the obj data
 
 // inclues funtion in javascript
 
-let str = "javascript";
+// let str = "javascript";
 
 // str.includes("java")
 
