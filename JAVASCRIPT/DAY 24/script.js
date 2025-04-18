@@ -25,7 +25,7 @@ function abcd(){
 let arr = [1,2,3,4,5];
 
 function hap(arr , fnc){
-    let newarr = [];
+    let newarr = []; 
     for(let i = 0 ; i<arr.length ;  i++){
        newarr.push( fnc(arr[i]))
     }
@@ -71,4 +71,3 @@ function limiter(fn , limit){
 let lmtans = limiter(function(){
     console.log("hey limiter");
 } , 3);
-
