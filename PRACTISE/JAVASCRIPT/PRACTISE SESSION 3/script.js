@@ -1,6 +1,5 @@
 // Practise session 3
 
-
 // Questions 
 // Remove duplicate values from an array. let arr = [1, 2, 3, 2, 4, 3, 5];
 //  Find the second largest number in an array. 
@@ -19,8 +18,6 @@
 
 
 // Second arget no of an array 
-// console.log(newarr[1])
-
 
 //sorting an array in decending order 
 
@@ -62,6 +59,9 @@ for(let i = numbers.length - 1 ; i>=0 ; i--){
 // 7 | 6 | true | obj[6] = 1 | {1: 2, 2: 2, 3: 2, 6: 1}
 // 8 | 3 | false | obj[3]++ | {1: 2, 2: 2, 3: 3, 6: 1}
 // 9 | 3 | false | obj[3]++ | {1: 2, 2: 2, 3: 4, 6: 1}
+
+
+
 let freqArr = [1,2,3,1,3,2,6,3,3];
 let obj = {} ;
 freqArr.forEach(function(val){
