@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body , html {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.card{
+    background-color: white;
+    padding: 30px 50px;
+
+}
+
+
+.progress{
+    width: 80vw ;
+    background-color: gray;
+    height: 20px;
+    border-radius: 50px;
+}
+
+
+.percentage{
+    display: flex;
+    justify-content: flex-end;
+    color: black;
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+.files{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+    margin-top: 15px;
+}
+
+button{
+    background-color: green;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+
+#growth{
+    background-color: rgb(156, 3, 3);
+    height: 100%;
+    width: 0;
+    border-radius: 50px;
+}
+
