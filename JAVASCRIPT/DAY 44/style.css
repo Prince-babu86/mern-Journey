@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body , html{
+    height: 100%;
+    width: 100%;
+    /* background-color: black; */
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+
+.spinner {
+    border: 3px solid transparent;
+    border-top: 3px solid white;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    animation: spin 1s linear infinite;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+
+
+  @keyframes spin {
+    to{
+        transform: rotate(360deg);
+    }
+  }
+
+
+  img{
+    object-fit: cover;
+    position: absolute;
+  }
+
+
+  button{
+    padding: 5px 25px;
+    border-radius: 5px;
+  }
+
+
+  button:active{
+    scale: 0.97;
+  }
+
+
+  .image{
+    height: 400px;
+    position: absolute;
+  }
+
+
+
+
+  .loader{
+    border: 5px solid transparent;
+    border-top: 5px solid white;
+    animation: spin linear 1s infinite;
+  }
+
+
+
+  @keyframes spin {
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+
+  .box{
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    transition: all ease-in-out 0.5s;
+    background-size: cover;
+
+  }
