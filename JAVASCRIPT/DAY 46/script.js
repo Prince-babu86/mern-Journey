@@ -57,8 +57,8 @@ container.innerHTML = clutter
 
 init()
 
-container.addEventListener("click" , function(dets){
-   let gold =  users[dets.target.id];
+export default container.addEventListener("click" , function(dets){
+  let gold =  users[dets.target.id];
  
    if(gold.isStatus == "Stranger"){
     gold.isStatus = "Friends"
