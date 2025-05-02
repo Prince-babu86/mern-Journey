@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(0, 0, 0) ;
+        color: white;
+
+    }
+
+    body{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .loader{
+        height: 60px;
+        width: 60px;
+        border-radius: 50%;
+        border: 4px solid rgb(255, 255, 255);
+        /* border-bottom: 4px solid rgb(255, 0, 0); */
+        
+        border-left: 4px solid rgb(255, 0, 0);
+        animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+</style>
+<body>
+    <div class="loader"></div>
+    <!-- <img src="https://i.pinimg.com/736x/5e/6b/29/5e6b293c7e0f09b2c8fbcf52e82b532d.jpg" alt=""> -->
+
+    <script src="script.js"></script>
+</body>
+</html>

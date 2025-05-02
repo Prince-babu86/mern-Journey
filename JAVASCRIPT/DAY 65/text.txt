@@ -1,0 +1,20 @@
+                +-------------------------+
+                |     JavaScript Code     |
+                +-----------+-------------+
+                            ↓
+                     +--------------+
+                     |  Call Stack  |
+                     +--------------+
+                            ↓
+      Async Call  → +-------------+       Timer/API
+      like setTimeout       ↓           handled by:
+                          Web APIs    →  Browser / Node.js
+                                       ↓
+                                +--------------+
+                                | Callback Queue|
+                                +--------------+
+                                        ↓
+                        Event Loop → checks if stack is empty
+                                        ↓
+                           Moves callback into Call Stack
+
