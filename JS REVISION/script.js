@@ -110,22 +110,86 @@
 // })
 
 
-function Java(elem){
-   return function Jaja(){
-        console.log(elem);
-    }
+// function Java(elem){
+//    return function Jaja(){
+//         console.log(elem);
+//     }
+// }
+
+
+// Java("Prince babu")();
+// function hofExample(callback) {
+//     return function () {
+//       callback();
+//     };
+//   }
+
+
+//   hofExample(function(){
+//     console.log("i am a callback function");
+//   })()
+  
+
+//   function counter(){
+//     let count = 0
+//     return function(){
+//       count++
+//       console.log(count);
+//     }
+//   }
+
+
+// let ans = counter()  
+
+
+
+// Questions practise in javascriot 
+
+// function Counter(){
+//     let sum = 0
+//     return function(){
+//         sum++
+//         console.log(sum);
+//     }
+// }
+
+// let count = Counter();
+
+
+// count()
+
+
+// function Remember(name){
+//     return function(){
+//         return name
+//     }
+// }
+
+
+// let ans =  Remember("JAJA");
+
+// function createPrivate(){
+//     let value = null
+//     return {
+//         getvalue:function(){
+//             return value
+//         },
+//         setvalue: function(newval){
+//             value = newval
+//         }
+//     }
+// }
+
+// const privateobj = createPrivate()
+
+// privateobj.setvalue(45)
+
+// console.log(privateobj.getvalue());
+
+let val = Number(prompt("Enter a number"))
+
+function isEven(n){
+    return n%2 == 0 ;
 }
 
-
-Java("Prince babu")();
-function hofExample(callback) {
-    return function () {
-      callback();
-    };
-  }
-
-
-  hofExample(function(){
-    console.log("i am a callback function");
-  })()
-  
+console.log(isEven(val));
