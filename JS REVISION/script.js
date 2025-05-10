@@ -186,10 +186,66 @@
 
 // console.log(privateobj.getvalue());
 
-let val = Number(prompt("Enter a number"))
 
-function isEven(n){
-    return n%2 == 0 ;
+/// Advance concepts and js revsion 
+
+// types of functions 
+
+// normal functions
+function greet(){
+    return "Hello"
 }
 
-console.log(isEven(val));
+
+const greeter = (name,age,email) => {
+    let obj = {
+        name:name,
+        age:age,
+        email:email
+    }
+    return obj ;
+}
+
+// greeter("Prince babu" , 18 , "princebabu4495@gmail.com")
+
+(function (x){
+    console.log(x);
+    return function(y){
+        console.log(y);
+    }
+})(1)(2);
+
+
+// callback function 
+
+function frist(callback){
+   callback()
+}
+
+
+
+frist(function second(){
+    console.log("Second fnc by frist fnc.");
+})
+
+
+/// higher order function 
+
+
+function Higher(x){
+    return function(y){
+        console.log(`sum of ${x} + ${y} = ${x+y}`);
+    }
+}
+
+
+
+
+let ans = Higher(5)
+
+
+function Clor(){
+    
+}
+
+
