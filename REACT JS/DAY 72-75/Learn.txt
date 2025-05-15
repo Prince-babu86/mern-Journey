@@ -1,0 +1,7 @@
+// 
+
+
+lecture =  day 72 
+
+1. Maping in react js 
+2. UseState Hooks 
