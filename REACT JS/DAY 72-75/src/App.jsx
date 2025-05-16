@@ -25,7 +25,8 @@ const handlerChange = () => {
 }
 
 
-console.log(updateddata);
+
+// console.log(updateddata);
 
   return (
     <div>

@@ -1,0 +1,7 @@
+// 
+
+1. two way binding 
+2. props drilling 
+
+
+
