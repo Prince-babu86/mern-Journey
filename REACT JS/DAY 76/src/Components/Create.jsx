@@ -22,21 +22,20 @@ const Create = (props) => {
   };
   useState
   return (
-    <>
-         <h1>Create Tasks</h1>
-      <form onSubmit={submitHnadler} action="">
-        <input
+    <div className=' w-[30vw] text-center border-r-[2px] p-5 sm:w-full border-none '>
+         <h1 className='text-4xl  text-start'>Set <span className='text-red-400'>Reminders</span> for tasks</h1>
+      <form className='w-full mt-5' onSubmit={submitHnadler} action="">
+        <input className='w-full  py-4 px-3 border-b-[2px] outline-none ' required="Please Enter some task here"
           onChange={(e) => settittle(e.target.value)}
           value={tittle}
           type="text"
-          placeholder="Tittle"
+          placeholder="Enter a Tittle here"
         />
-        <br />
-        <br />
+       
 
-        <button type="submit">Create</button>
+        <button className='text-start flex items-start mt-5 py-2 px-10 rounded-[8px] bg-blue-500 text-white' type="submit">Create</button>
       </form>
-    </>
+    </div>
   )
 }
 

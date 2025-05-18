@@ -7,24 +7,20 @@ const App = () => {
     // { id: 1, tittle: "Kam kar le bhai", isCompleted: false },
   ]);
 
+ let dta = [...todos]
+ console.log(dta);
+
+
   const [isCompleted, setisCompleted] = useState(false);
 
   const [gender, setgender] = useState("male");
   const [city, setcity] = useState("Agra");
 
-
-  const Fnc = (a,f,...rest) => {
-    console.log(rest);
-
-  }
-
-  Fnc("Prince","javascript","newdata","jojo","jaja","kakakka")
   return (
-    <>
+    <div className="w-screen h-screen  p-10 flex sm:flex-col">
       <Create settodos={settodos} todos={todos} />
-      <br />
-      <br />
-      <Read todos={todos} />
+      
+      <Read todos={todos} settodos={settodos} />
 
       <div>
         {" "}
@@ -43,7 +39,7 @@ const App = () => {
           <option value="Agra">Agra</option>
         </select> */}
       </div>
-    </>
+    </div>
   );
 };
 
