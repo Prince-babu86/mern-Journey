@@ -17,7 +17,7 @@ const App = () => {
   const [city, setcity] = useState("Agra");
 
   return (
-    <div className="w-screen h-screen  p-10 flex sm:flex-col">
+    <div className="w-screen h-screen  p-10 flex ">
       <Create settodos={settodos} todos={todos} />
       
       <Read todos={todos} settodos={settodos} />
