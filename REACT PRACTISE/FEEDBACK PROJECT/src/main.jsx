@@ -1,15 +1,12 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
+import App from './App.jsx'
 import { ToastContainer } from 'react-toastify'
-import Wrapper from './Wrapper.jsx'
 
 createRoot(document.getElementById('root')).render(
-  <>
-  <Wrapper>
+  <StrictMode>
     <App />
-    <ToastContainer position='bottom-right'/>
-  </Wrapper>
-  </>
+    <ToastContainer position='bottom-right' />
+  </StrictMode>,
 )

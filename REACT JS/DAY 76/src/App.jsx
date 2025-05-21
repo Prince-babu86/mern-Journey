@@ -3,13 +3,8 @@ import Read from "./Components/Read";
 import { useState } from "react";
 
 const App = () => {
-  const [todos, settodos] = useState([
-    // { id: 1, tittle: "Kam kar le bhai", isCompleted: false },
-  ]);
-
- let dta = [...todos]
- console.log(dta);
-
+  // let dta = [...todos];
+  //  console.log(dta);
 
   const [isCompleted, setisCompleted] = useState(false);
 
@@ -17,10 +12,10 @@ const App = () => {
   const [city, setcity] = useState("Agra");
 
   return (
-    <div className="w-screen h-screen  p-10 flex ">
-      <Create settodos={settodos} todos={todos} />
-      
-      <Read todos={todos} settodos={settodos} />
+    <div className="w-screen h-screen bg-gray-800 text-white  p-10 flex ">
+      <Create />
+
+      <Read />
 
       <div>
         {" "}

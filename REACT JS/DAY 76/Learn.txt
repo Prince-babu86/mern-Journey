@@ -1,1 +1,4 @@
 1. State management  // file hi component 
+2. Useform 
+3.context Api
+4. Higher order component => 
