@@ -1,20 +1,17 @@
 import React, { useEffect } from 'react'
 import axios from "./api/Axiosconfig"
+import { getusers } from './store/UserAction'
+import { useDispatch, useSelector } from 'react-redux'
 
 const App = () => {
 
-  const getusers = async () => {
-    try {
-      const res = await axios.get("/products")
-      console.log(res);
-    } catch (error) {
-      console.log(error);
-    }
-  }
+  
 
-
+ const  dispatch = useDispatch()
+ const data = useSelector((state) => state)
+console.log(data);
   useEffect(()=>{
-    getusers()
+   dispatch(getusers())
   },[])
 
   return (
